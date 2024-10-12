@@ -1,6 +1,5 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
-import { s } from "framer-motion/client";
 
 function ContactSection() {
   const [contactDetails, setContactDetails] = React.useState({

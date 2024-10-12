@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import Typewriter from "typewriter-effect";
-import Example from "./animateBox/animationBox";
 import Link from "next/link";
 import profilePic from "@/assets/profilePic.png";
 import Image from "next/image";
@@ -136,8 +135,8 @@ function HomeSection() {
             <p>Currently shaping innovative logistics solutions at <span className=" font-bold">Instavans</span>, where technology drives seamless transportation experiences</p>
             <p className="mt-5 font-light">What skills make me a strong fit for your company?</p>
             <div className=" mt-2">{
-              skillsList.map((item,index):any=>{
-                return(<div>{item}</div>)
+              skillsList.map((item):any=>{
+                return(<div key={item}>{item}</div>)
               })  
             }</div>
           </div>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { it } from "node:test";
 import "./animateLayout.css";
 
 function AnimateLayout() {

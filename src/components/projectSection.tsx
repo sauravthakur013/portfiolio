@@ -12,7 +12,6 @@ function ProjectSection() {
   const listSaasExpe = ['React Js', 'Tailwind CSS', 'Chat.Js', 'Node Js'];
   const divsaas = useRef(null);
 
-  const [teacherHover, setTeacherHover] = useState(false);
   const [showTeacherexpe, setShowTeacherexpe] = useState(false);
   const listTeacherExpe = ['Next Js', 'Typescript', 'Tailwind CSS', 'Node Js', 'MongoDB', 'Express Js'];
   const divTeacher = useRef(null);

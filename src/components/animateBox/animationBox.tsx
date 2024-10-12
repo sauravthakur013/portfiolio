@@ -1,6 +1,5 @@
 import * as React from "react";
 import { useState } from "react";
-import { render } from "react-dom";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { distance } from "@popmotion/popcorn";
 import "./styles.css";
@@ -47,9 +46,7 @@ const valueFinder = (num:number) => {
 }
 
 const Square = ({ active, setActive, colIndex, rowIndex, x, y, value }:any) => {
-  let target = -1;
   const isDragging = colIndex === active.col && rowIndex === active.row;
-  const diagonalIndex = (360 / 6) * (colIndex + rowIndex);
   const d = distance(
     { x: active.col, y: active.row },
     { x: colIndex, y: rowIndex }

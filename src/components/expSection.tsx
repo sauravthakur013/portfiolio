@@ -1,4 +1,3 @@
-import { div } from "framer-motion/client";
 import React, { useEffect, useRef } from "react";
 import instavansLogo from "@/assets/instavans.png";
 import bookysureLogo from "@/assets/bookysure_logo.png";

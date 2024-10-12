@@ -1,15 +1,14 @@
 "use client";
 import React, { useEffect } from "react";
 import Navbar from "@/components/navbar";
-import { Link, animateScroll as scroll, scroller } from "react-scroll";
+import { animateScroll as  scroller } from "react-scroll";
 import HomeSection from "@/components/homeSection";
 import ExpSection from "@/components/expSection";
 import ProjectSection from "@/components/projectSection";
 import ContactSection from "@/components/contactSection";
-import FloatingWords from "@/components/floatingElement";
 
-export default function Home({ params }: any) {
-  const [section, setSection] = React.useState("home");
+export default function Home() {
+  const [section, setSection] = React.useState<any>("home");
   console.log(section);
 
   useEffect(() => {
